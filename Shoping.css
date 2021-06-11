@@ -1,0 +1,456 @@
+head,body{
+    background:#D79DA7;
+}
+font-face {
+    font-family:Sail;
+    src: url(./font/Sail/Sail-Regular.ttf);
+}
+@font-face{
+    font-family:Montserrat;
+    src: url(./font/Montserrat/Montserrat-Regular.ttf);
+}
+.logo{
+    display:flex;
+    align-items:center !important;
+    justify-content:space-between;
+    width:15%;
+}
+.logo_img{
+    width:70px;
+}
+
+.logo_text{
+    font-family:Sail, Arial, Helvetica, sans-serif;
+    font-size:1.5rem;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.header_body{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center !important;
+}
+.header_menu{
+    align-items: center;
+    font-size: 10px;
+}
+.header_list{
+    margin: 0;
+    display: flex;
+}
+.header_list li{
+    width: 90%;
+    list-style: none;
+    border-radius: 20px;
+    border: 2px solid #EBD6D9;
+    background:#EBD6D9;
+    z-index: -1;
+    margin: 0px 10px 0px 10px;
+    padding: 3px 5px 3px 5px;
+}
+.header_list .menu__item{
+    text-decoration: none;
+    color:black;
+}
+li img{
+    width: 20px;
+    height:20px;
+    margin-right: 7px;
+}
+.header_block{
+    width: 70%;
+    margin-top: 10%;
+}
+.header_block h1{
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight:100;
+ }
+.header_block p{
+    font-size:120%;
+    font-family: Montserrat;
+    margin-top: 10%;
+}
+.block{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.block .card{
+    width: 31%;
+    margin-bottom: 5%;
+    border: none;
+}
+.block .card a{
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 5%;
+    position: absolute;
+    font-size: 20px;
+    bottom: 50px;
+    left: 20px;
+    color:white;
+    background:#DFB9BF ;
+    font-weight: 200;
+    text-decoration: none;
+}
+.block .card p{
+    position: absolute;
+    bottom: 150px;
+    left: 20px;
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+.card .fon{
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+.block .card a:hover{
+    color:#D79DA7;
+    background:white;
+
+}
+.scroll{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow-x: scroll;
+    padding: 5%;
+    scrollbar-width: 10px;
+    scrollbar-color: blue orange;
+}
+.scroll_card_cake{
+    margin: 0% 5%;
+    background: #DFB9BF;
+    padding: 2% 1%;
+    height: 450px;
+    border-radius: 20px;
+}
+.scroll_card_cake img{
+    width: 300px
+}
+.scrol::-webkit-scrollbar{
+    width:0;
+}
+.scroll::-webkit-scrollbar{
+    width:0;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background: #EBD6D9; 
+    border-radius: 20px;
+    width: 5px;
+  }
+  .scroll::-webkit-scrollbar-track{
+    background: #DFB9BF;
+    border-radius: 20px;
+  }
+.scroll_item{
+    margin-right:15%;
+    width:auto;
+    position: relative;
+}
+.scroll_item a{
+    text-decoration: none;
+    color:black;
+    margin-top:5%;
+    font-size: 14px;
+    padding: 10% 50%;
+    border-radius: 20px;
+    position: absolute;
+    background: #DFB9BF;
+}
+.scroll_img{
+    width:100%;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 30%; 
+}
+.scroll_item img{
+    width: 80px;
+    height: 70px;
+}
+.card{
+    width: 26% !important;
+    background: none;
+    border:none;
+    margin-top: 5%;
+}
+.img{
+    padding: 10px;
+    background: #DFB9BF;
+    border-radius: 15px;
+}
+.card_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.card img{
+    width: 100%;
+}
+
+.count input{
+    width: 45px;
+    text-align: center;
+    max-width: 60px;
+    background:#DFB9BF;
+    border: none;
+    border-radius: 20px;
+    
+}
+.count_btn{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.cards_wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:768px) {
+    .logo{
+        width: 20%;
+    }
+    .logo_img{
+        width:120px;
+    }
+    .logo_text{
+        font-family:Sail, Arial, Helvetica, sans-serif;
+        font-size:24px;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .navbar_search_block{
+        display: flex;
+        width: 25%;
+    }
+    .navbar_search_block input{
+        border:none;
+        padding: 5px 10px;
+        outline: none;
+        background:#EBD6D9;
+        width: 100%;
+        height: 27px;
+        font-size: 13px;
+        border-radius:20px 0px 0px 20px ;
+    }
+    .navbar_search_block button{
+        width:20%;
+        height:27px;
+        border:none !important;
+        background:#EBD6D9;
+        cursor: pointer;
+        color:#000;
+        font-size:1vw;
+        border-radius:0px 20px 20px 0px ;
+    }
+    .scroll_wrapper{
+        width: 100%;
+    }
+    .card_flex{
+        display: block;
+    }
+    .card img{
+        width: 100%;
+    }
+    .price{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:414px) {
+    .block{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .block .card{
+        width: 100%;
+    }
+    .scroll{
+        height:170px;
+    }
+    .scroll_item a{
+        padding: 2% 20%;
+        text-align: center;
+    }
+    .scroll{
+        margin-top: 5%;
+        height:140px;
+    }
+    .logo_img{
+        width:50px;
+    }
+    .logo_text{
+        font-family:Sail, Arial, Helvetica, sans-serif;
+        font-size:20px;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+    .scroll_item{
+        width: 500px;
+    }
+    .navbar{
+        display:block;
+        width: 100%;
+        align-items:center !important;
+    }
+    .navbar_search_block{
+        display: flex;
+        width: 100%;
+        margin-top: 10%;
+    }
+    .navbar_btn a{
+        width:100%;
+        height:20px;
+        border-radius:20px !important;
+        border:none !important;
+        background:#EBD6D9;
+        cursor: pointer;
+        color:#000;
+        font-size:8px;
+        text-decoration: none;
+        margin-left: 5%;
+    }
+    .navbar_btn a img{
+        margin: 0;
+    }
+    .navbar_btn{
+        width:35%;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        position: absolute;
+        top: 22%;
+        right: 0%;
+    }
+    .navbar_search_block input{
+        border:none;
+        padding: 5px 10px;
+        outline: none;
+        height: 35px;
+        background:#EBD6D9;
+        width: 100%;
+        font-size: 13px;
+        border-radius:15px 0px 0px 15px ;
+    }
+    .navbar_search_block button{
+        width:20%;
+        height:35px;
+        border:none !important;
+        background:#EBD6D9;
+        cursor: pointer;
+        color:#000;
+        font-size:1vw;
+        border-radius:0px 15px 15px 0px ;
+    }
+    .card_flex{
+        display: block;
+    }.card img{
+        width: 100%;
+    }
+    .price{
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:375px) {
+  
+    .scroll_item a{
+        padding: 2% 20%;
+        text-align: center;
+    }
+    .scroll{
+        margin-top: 0%;
+        height:140px;
+    }
+    .logo_img{
+        width:50px;
+    }
+    .logo_text{
+        font-family:Sail, Arial, Helvetica, sans-serif;
+        font-size:20px;
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+    .scroll_item{
+        width: 500px;
+    }
+    .navbar{
+        display:block;
+        width: 100%;
+        align-items:center !important;
+    }
+    .navbar_search_block{
+        display: flex;
+        width: 100%;
+        margin-top: 10%;
+    }
+    .navbar_btn a{
+        width:100%;
+        height:20px;
+        border-radius:20px !important;
+        border:none !important;
+        background:#EBD6D9;
+        cursor: pointer;
+        color:#000;
+        font-size:8px;
+        text-decoration: none;
+        margin-left: 5%;
+    }
+    .navbar_btn a img{
+        margin: 0;
+    }
+    .navbar_btn{
+        width:35%;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        position: absolute;
+        top: 22%;
+        right: 0%;
+    }
+    .navbar_search_block input{
+        border:none;
+        padding: 5px 10px;
+        outline: none;
+        height: 35px;
+        background:#EBD6D9;
+        width: 100%;
+        font-size: 13px;
+        border-radius:15px 0px 0px 15px ;
+    }
+    .navbar_search_block button{
+        width:20%;
+        height:35px;
+        border:none !important;
+        background:#EBD6D9;
+        cursor: pointer;
+        color:#000;
+        font-size:1vw;
+        border-radius:0px 15px 15px 0px ;
+    }
+    .card_flex{
+        display: block;
+    }
+    .card img{
+        width: 100%;
+    }
+    .price{
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
